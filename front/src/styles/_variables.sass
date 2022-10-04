@@ -1,0 +1,42 @@
+@import ./mixins
+
+
+
+:root
+    --bodyMinWidth: 320px    
+    --bodyFontFamily: Jost, sans-serif
+    --bodyFontSize: 14px
+    --bodyFontWeight: 300
+    --bodyTextTransform: uppercase
+    --bodyLetterSpacing: .15em
+    --bodyColor: #000
+    --bodyBackgroundColor: #F8F9FA
+
+    --mainPadding: 20px
+
+    --selectionColor: #FFF
+    --selectionBackgroundColor: #000
+
+    --barWidth: 88px
+
+    --headerHeight: 88px
+
+
+    --tbodyRowGap: 10px
+    --trsRowGap: 16px
+    --tdImageWidth: 128px
+    --tdImageHeight: calc(var(--tdImageWidth)/2)
+    --tdAvatarSize: var(--tdImageHeight)
+    --tdIconSize: calc(var(--tdAvatarSize)/4)
+
+    // --authSplashWidth: 55%
+    
+
+
+// @include MediaW(1920px)
+//     :root
+//         --selectionColor: red
+
+@include MediaW(1440px)
+    :root
+        --headerHeight: 144px

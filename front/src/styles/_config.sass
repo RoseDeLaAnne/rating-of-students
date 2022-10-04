@@ -1,0 +1,118 @@
+@import ./variables
+@import ./fonts
+
+
+
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+body
+    margin: 0
+
+    position: relative
+
+    min-width: var(--bodyMinWidth)
+
+    font-family: var(--bodyFontFamily)
+    font-size: var(--bodyFontSize)
+    font-weight: var(--bodyFontWeight)
+
+    text-transform: var(--bodyTextTransform)
+
+    letter-spacing: var(--bodyLetterSpacing)
+
+    color: var(--bodyColor)
+    background-color: var(--bodyBackgroundColor)
+
+    overflow-x: hidden
+
+body,
+#app,
+.page,
+.wrapper
+    min-height: 100vh
+
+.wrapper
+    padding-top: var(--headerHeight)
+    padding-left: var(--barWidth)
+
+
+    @include MediaW(1024px)
+        padding-left: 0
+
+.main
+    min-height: calc(100vh - var(--headerHeight))
+
+
+    &.--empty
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+::selection
+    color: var(--selectionColor)
+    background-color: var(--selectionBackgroundColor)
+
+
+svg,
+img,
+video
+    display: block
+
+svg
+    pointer-events: none
+
+img,
+video
+    object-fit: cover
+
+a
+    display: inline-block
+    
+    text-decoration: none
+
+    color: inherit
+
+    outline: none
+
+input,
+button
+    padding: 0
+
+    font-family: inherit
+    font-size: inherit
+
+    text-transform: inherit
+
+    letter-spacing: inherit
+
+    background: none
+
+    border: none
+    outline: none
+
+button
+    cursor: pointer
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+    margin: 0
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-size: inherit
+    font-weight: inherit
